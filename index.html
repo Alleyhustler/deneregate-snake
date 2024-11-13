@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Degenerate Snake Xenzia</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Micro+5&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Background video -->
+  <video autoplay muted loop id="background-video">
+    <source src="795-205810628_small.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <div class="how-to-play">
+    <h2>How to Play</h2>
+    <ul>
+      <li>Use the arrow keys or W, A, S, D to move the snake.</li>
+      <li>Eat the red food to grow the snake and increase your score.</li>
+      <li>Avoid hitting the walls or your own tail.</li>
+      <li>The game speeds up as the snake grows longer.</li>
+      <li>Try to achieve the highest score!</li>
+    </ul>
+  </div>
+
+  <div class="how-to-win">
+    <h2>How to Win</h2>
+    <p>The first one to reach 1000 points will receive 1% of the supply!</p>
+  </div>
+
+  <div class="game-container">
+    <h1>Degenerate Snake Xenzia</h1>
+    <canvas id="game-board"></canvas>
+    
+    <div class="score-container">
+      <p id="score">Score: 0</p>
+      <button onclick="resetGame()">Restart</button>
+    </div>
+  </div>
+
+  <!-- Tokenomics Section -->
+  <div class="tokenomics">
+    <h2>Tokenomics</h2>
+    <p>Our token has a total supply of 1,000,000,000 tokens. The distribution is as follows:</p>
+    <ul>
+      <li><strong>2%</strong> to community rewards</li>
+      <li><strong>95%</strong> for liquidity pool</li>
+      <li><strong>1%</strong> for development</li>
+      <li><strong>3%</strong> for marketing</li>
+    </ul>
+  </div>
+  
+  <!-- Socials Section -->
+  <div class="socials">
+    <h2>Follow Us</h2>
+    <div class="social-icons">
+      <a href="https://twitter.com" target="_blank" class="social-icon">Twitter</a>
+      <a href="https://discord.com" target="_blank" class="social-icon">Telegram</a>
+      <a href="https://github.com" target="_blank" class="social-icon">DEX (soon)</a>
+    </div>
+  </div>
+</div>
+  
+
+  <script src="script.js"></script>
+</body>
+</html>
